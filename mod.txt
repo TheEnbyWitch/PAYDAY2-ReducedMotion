@@ -1,0 +1,16 @@
+{
+	"name" : "Reduced Motion",
+	"description" : "Removes headbobbing, breathing, and weapon sway when not aimed down the sights. Based on Schmuddel's Anti-Bobble",
+	"author" : "Vivian, The Enby Witch",
+	"contact" : "vivi.the.enbywit.ch",
+	"version" : "3",
+	"blt_version" : 2,
+	"image" : "bob.png",
+	"hooks" : [
+		{ "hook_id": "lib/tweak_data/playertweakdata", "script_path": "reducedmotion.lua" },
+		{ "hook_id": "lib/units/beings/player/playercamera", "script_path": "reducedmotion.lua" },
+		{ "hook_id": "lib/units/beings/player/states/playercarry", "script_path": "reducedmotion.lua" },
+		{ "hook_id": "lib/units/beings/player/states/playermaskoff", "script_path": "reducedmotion.lua" },
+		{ "hook_id": "lib/units/beings/player/states/playerstandard", "script_path": "reducedmotion.lua" }
+	]
+}
