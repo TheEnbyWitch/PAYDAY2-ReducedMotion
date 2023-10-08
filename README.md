@@ -1,5 +1,5 @@
 # PAYDAY2-ReducedMotion
-This mod removes various movements that may cause motion sickness in some people.
+This mod removes various movements in PAYDAY 2 that may cause motion sickness in some people.
 
 Based on https://modworkshop.net/mod/15363
 
