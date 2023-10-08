@@ -20,8 +20,8 @@ if RequiredScript == "lib/tweak_data/playertweakdata" then
 end
 
 if RequiredScript == "lib/units/beings/player/playercamera" then
-	local old_ptd = PlayerTweakData.play_shaker
-	function PlayerTweakData:play_shaker(effect, amplitude, frequency, offset)
+	local old_ptd = PlayerCamera.play_shaker
+	function PlayerCamera:play_shaker(effect, amplitude, frequency, offset)
 		-- Remove the camera roll shaker when firing a weapon
 		if effect == "fire_weapon_rot" then
 			return
@@ -29,7 +29,6 @@ if RequiredScript == "lib/units/beings/player/playercamera" then
 
 		return old_ptd(self, effect, amplitude, frequency, offset)
 	end
-	
 end
 
 if RequiredScript == "lib/units/beings/player/states/playercarry" then
